@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t8t-Rn-75k">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voting-->
+        <scene sceneID="dsL-ea-NaY">
+            <objects>
+                <viewController id="t8t-Rn-75k" customClass="VotingViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="12p-7n-0Mg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ls7-Ps-ChI">
+                                <rect key="frame" x="5" y="278.5" width="365" height="110"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ub-FL-rR2">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your response" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fY3-kk-frF">
+                                        <rect key="frame" x="0.0" y="40" width="365" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFp-xX-pRz">
+                                        <rect key="frame" x="0.0" y="80" width="365" height="30"/>
+                                        <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="submit:" destination="t8t-Rn-75k" eventType="touchUpInside" id="yrF-ty-wI8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;What is your favorite color?&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaV-B5-hIL">
+                                <rect key="frame" x="76" y="40" width="223" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ls7-Ps-ChI" firstAttribute="centerX" secondItem="12p-7n-0Mg" secondAttribute="centerX" id="0Ea-Hn-3Sh"/>
+                            <constraint firstItem="Ls7-Ps-ChI" firstAttribute="leading" secondItem="tG4-FR-fHI" secondAttribute="leading" constant="5" id="8Zt-uG-JV7"/>
+                            <constraint firstItem="tG4-FR-fHI" firstAttribute="trailing" secondItem="Ls7-Ps-ChI" secondAttribute="trailing" constant="5" id="8eF-Li-KpV"/>
+                            <constraint firstItem="Ls7-Ps-ChI" firstAttribute="centerY" secondItem="12p-7n-0Mg" secondAttribute="centerY" id="NHe-YM-F7G"/>
+                            <constraint firstItem="GaV-B5-hIL" firstAttribute="top" secondItem="tG4-FR-fHI" secondAttribute="top" constant="20" id="R5n-cM-E82"/>
+                            <constraint firstItem="GaV-B5-hIL" firstAttribute="centerX" secondItem="tG4-FR-fHI" secondAttribute="centerX" id="yKX-Cp-sfH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tG4-FR-fHI"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Voting" id="WcW-jb-ey6"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="2Ub-FL-rR2" id="kx7-IJ-Ycg"/>
+                        <outlet property="responseTextField" destination="fY3-kk-frF" id="b9Q-nP-HGd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BrJ-6o-3Qg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78" y="63"/>
+        </scene>
+    </scenes>
+</document>
