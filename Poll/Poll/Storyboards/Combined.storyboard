@@ -49,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDs-SY-iyq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128.80000000000001" y="161.46926536731635"/>
+            <point key="canvasLocation" x="262" y="141"/>
         </scene>
         <!--Voting-->
         <scene sceneID="1vp-r4-jTV">
@@ -57,7 +57,7 @@
                 <viewControllerPlaceholder storyboardName="Voting" id="Ijf-kQ-ouv" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2P-JY-et1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="736" y="24"/>
+            <point key="canvasLocation" x="856" y="4"/>
         </scene>
         <!--Results-->
         <scene sceneID="z0l-Fj-ft6">
@@ -65,7 +65,7 @@
                 <viewControllerPlaceholder storyboardName="Results" id="QTz-gs-6sF" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="181-Yg-Ia1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="293"/>
+            <point key="canvasLocation" x="858" y="288"/>
         </scene>
     </scenes>
 </document>

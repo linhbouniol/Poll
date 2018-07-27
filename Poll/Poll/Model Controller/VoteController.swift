@@ -13,7 +13,7 @@ class VoteController {
     private(set) var votes: [Vote] = []
     
     func create(name: String, response: String) -> Vote {
-        let vote = Vote(name: name, response: response)
+        let vote = Vote(name: name, response: response, timestamp: Date())
         votes.append(vote)
         return vote
     }

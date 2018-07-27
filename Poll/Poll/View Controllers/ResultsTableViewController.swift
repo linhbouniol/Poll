@@ -26,11 +26,17 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocol 
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "VoteCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "VoteCell", for: indexPath) as! VoteTableViewCell
         
         let vote = voteController?.votes[indexPath.row]
-        cell.textLabel?.text = vote?.name
-        cell.detailTextLabel?.text = vote?.response
+        cell.nameLabel?.text = vote?.name
+        cell.responseLabel?.text = vote?.response
+        
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        formatter.timeStyle = .medium
+        
+        cell.dateLabel?.text = formatter.string(from: vote!.timestamp)
 
         return cell
     }

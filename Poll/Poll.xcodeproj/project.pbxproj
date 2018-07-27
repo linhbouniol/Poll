@@ -21,6 +21,7 @@
 		39B25B4C210A5FD6001164DC /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B25B4B210A5FD6001164DC /* CombinedViewController.swift */; };
 		39B25B4E210A6208001164DC /* PollingTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B25B4D210A6208001164DC /* PollingTabBarViewController.swift */; };
 		39B25B50210A6278001164DC /* VoteControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B25B4F210A6278001164DC /* VoteControllerProtocol.swift */; };
+		39E6AC1D210ABE300072A46D /* VoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E6AC1C210ABE300072A46D /* VoteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		39B25B4B210A5FD6001164DC /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
 		39B25B4D210A6208001164DC /* PollingTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingTabBarViewController.swift; sourceTree = "<group>"; };
 		39B25B4F210A6278001164DC /* VoteControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteControllerProtocol.swift; sourceTree = "<group>"; };
+		39E6AC1C210ABE300072A46D /* VoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				39B25B2B210A59A4001164DC /* AppDelegate.swift */,
 				39B25B4F210A6278001164DC /* VoteControllerProtocol.swift */,
+				39E6AC1C210ABE300072A46D /* VoteTableViewCell.swift */,
 				39B25B51210A629D001164DC /* Model */,
 				39B25B52210A62A6001164DC /* Model Controller */,
 				39B25B53210A62B7001164DC /* View Controllers */,
@@ -203,6 +206,7 @@
 				39B25B50210A6278001164DC /* VoteControllerProtocol.swift in Sources */,
 				39B25B3E210A59DD001164DC /* Vote.swift in Sources */,
 				39B25B2C210A59A4001164DC /* AppDelegate.swift in Sources */,
+				39E6AC1D210ABE300072A46D /* VoteTableViewCell.swift in Sources */,
 				39B25B44210A5D87001164DC /* VotingViewController.swift in Sources */,
 				39B25B4E210A6208001164DC /* PollingTabBarViewController.swift in Sources */,
 			);
